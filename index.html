@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emojis and Design</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightgray;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: blue;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: purple;
+      text-decoration: none;
+	  background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+	  background-color: Red;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+	
+	a:active {
+	 color: peachpuff;
+	 background-color: Olive;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+	
+    .box {
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .box:target {
+      background-color: orange;
+      color: yellow;
+    }
+
+    .box2 {
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .box2:target {
+      border: 10px dotted green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cool</h1>
+  
+  <p>Click this ▶️ <a href="#target">Link</a> ◀️ Click this</p>
+  
+  <div class="box" id="target">
+    <p>Background Div</p>
+    <p>When the link above is clicked, this div's background color and text color will change.</p>
+  </div>
+  
+  <div class="box2" id="target2">
+    <p>Bordered Div</p>
+    <p>When the link below is clicked, this div's border style will change.</p>
+  </div>
+
+  <p>Click here ▶️ <a href="#target2">Link</a> ◀️ Click here</p>
+</body>
+</html>
